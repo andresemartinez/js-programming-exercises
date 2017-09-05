@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"> 
+
+		<!-- <link rel="shortcut icon" href="./png/bubble.png"></link> -->
+		<link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/custom.css">
+
+		<title>Ejercicio 3: Fibonacci</title>
+	</head>
+	<body>
+
+		<div class="title">
+			<span class="sub-title">Ejercicio 3</span>
+			<span class="main-title">Fibonacci</span>
+		</div>
+
+		<div class="statement">
+			<p class="main-statement">Complete las funciones generate y reset. Generate debe generar un array con todos los numeros de la secuencia de fibonacci menores a 100 de forma iterativa y otro de forma recursiva.</p>
+			<p class="sub-statement">Para facilir el ejersicio, ya vienen implenetadas las fucines redrawExampleIterative y redrawExampleRecursive. Ambas esperan un array como parametro.</p>
+		</div>
+
+		<div class="content">
+			<div class="menu">
+				<div class="btn-toolbar" role="toolbar">
+					<button id="generate-button" type="button" class="btn btn-default">Generar</button>
+					<button id="reset-button" type="button" class="btn btn-default">Reset</button>
+				</div>
+			</div>
+
+			<div class="ejemplo">
+				<span class="example-title">Iterative solution:</span>
+				<div id=example-iterative class="array"></div>
+				<span class="example-title">Recursive solution:</span>
+				<div id=example-recursive class="array"></div>
+			</div>
+		</div>
+
+		<script src="./lib/js/jquery-3.2.1.min.js"></script>
+		<script src="./lib/js/popper.min.js"></script>
+		<script src="./lib/js/bootstrap.min.js"></script>
+		<script src="./js/custom.js"></script>
+	</body>
+</html>
