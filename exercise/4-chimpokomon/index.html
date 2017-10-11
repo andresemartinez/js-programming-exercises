@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- <link rel="shortcut icon" href="./png/bubble.png"></link> -->
+		<link rel="stylesheet" href="/lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/base.css">
+		<link rel="stylesheet" href="./css/custom.css">
+
+		<title>Ejercicio 4: Chimpokomon</title>
+	</head>
+	<body>
+
+		<div class="title">
+			<h1 class="sub-title">Ejercicio 4</h1>
+			<h2 class="main-title">Chimpokomon</h2>
+		</div>
+
+		<div class="statement">
+			<p class="main-statement">Complete las funciones generateChimpokomonsInfo() para que generen una tabla con valores aleatorios de ataque y defensa para cada chimpokomon en la lista "chimpokomons" y los muestre ordenados alfabeticamente (a-z), e inputChanged() que es llamada cuando se edita el capo de filtro en la vista y debe filtrar la tabla para mostrar unicamente los chimpokomons cuyo nombre coincida total o parciamente con lo ingresado.</p>
+			<p class="sub-statement">Para dibujar la tabla existe la funcion redrawTable(Map) que espera un mapa con las keys "number", "name", "attack" y "defense", y para obtener el contenido del campo input existe la funcion getInput().</p>
+		</div>
+
+		<div class="content">
+			<div class="menu">
+				<div class="btn-toolbar" role="toolbar">
+					<button id="generate-button" type="button" class="btn btn-default">Generar</button>
+					<button id="clear-button" type="button" class="btn btn-default">clear</button>
+				</div>
+				<input id=search-input type="text" name="Search">
+			</div>
+
+			<div class="ejemplo">
+				<div id="example-table" class="table">
+					<div class="example-row header">
+						<div class="number">#</div>
+						<div class="name">Name</div>
+						<div class="attack">Attack</div>
+						<div class="defense">Defense</div>
+					</div>
+					<div class="content"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="/lib/js/jquery-3.2.1.min.js"></script>
+		<script src="/lib/js/popper.min.js"></script>
+		<script src="/lib/js/bootstrap.min.js"></script>
+		<script src="./js/custom.js"></script>
+	</body>
+</html>

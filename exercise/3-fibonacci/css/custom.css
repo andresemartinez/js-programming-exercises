@@ -1,0 +1,31 @@
+.content .ejemplo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content .ejemplo .example-title {
+	margin-bottom: 10px;
+	color: #e12027;
+  	font-weight: 600;
+}
+
+.content .ejemplo .array {
+	display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 0 20px 0;
+}
+
+.content .ejemplo .array .element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 80px;
+	font-size: 16px;
+	border-radius: 4px;
+	background-color: #e12027;
+	color: #ffffff;
+	margin: 0 10px 10px 0;
+}

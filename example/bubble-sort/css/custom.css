@@ -1,0 +1,99 @@
+.content .menu .info {
+	display: flex;
+	min-width: 310px;
+}
+
+.content .counters {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #e12027;
+	padding: 0 4px 0 4px;
+	margin: 0 0 0 15px;
+}
+
+.content .counters .counters-title {
+	font-weight: 600;
+	padding: 0 8px 0 0;
+	margin: 0 8px 0 0;
+}
+
+.content .counters .counter {
+	margin: 0 5px 0 0;
+}
+
+.content .state {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #e12027;
+	padding: 0 4px 0 4px;
+	margin: 0 0 0 15px;
+}
+
+.content .state .state-title {
+	font-weight: 600;
+	padding: 0 8px 0 0;
+	margin: 0 8px 0 0;
+}
+
+.content .state .state-description {
+
+}
+
+.content .ejemplo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content .ejemplo .result {
+	display: flex;
+	flex-direction: column;
+}
+
+.content .ejemplo .array {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+}
+
+.content .ejemplo .array .element-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 10px 0 0;
+}
+
+.content .ejemplo .array .element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	font-size: 16px;
+	border-radius: 4px;
+  	background-color: #e12027;
+  	color: #ffffff;
+  	margin: 0 0 10px 0;
+}
+
+.arrow-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow-container .arrow {
+	border: solid #e12027;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-container .arrow-title {
+	font-weight: 600;
+}

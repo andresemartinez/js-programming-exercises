@@ -1,0 +1,48 @@
+#search-input {
+	padding: 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-color: #e12027;
+}
+
+.content .ejemplo {
+
+}
+
+.content .ejemplo .table {
+	display: flex;
+	flex-direction: column;
+}
+
+.content .ejemplo .content {
+	max-height: 32vh;
+	overflow-y: auto;
+}
+
+.content .ejemplo .table .example-row {
+	display: flex;
+  min-height: 40px;
+	padding: 5px 10px 5px 10px;
+	color: #941419;
+}
+
+.content .ejemplo .table .example-row.header {
+	color: #e12027;
+  font-weight: 600;
+}
+
+.content .ejemplo .table .example-row .number {
+	width: 10%
+}
+
+.content .ejemplo .table .example-row .name {
+	width: 40%
+}
+
+.content .ejemplo .table .example-row .attack {
+	width: 30%;
+}
+
+.content .ejemplo .table .example-row .defense {
+}

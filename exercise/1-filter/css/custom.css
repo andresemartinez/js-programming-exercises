@@ -1,0 +1,46 @@
+.content .ejemplo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content .ejemplo .array {
+	display: flex;
+}
+
+.content .ejemplo .array .element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	font-size: 16px;
+	border-radius: 4px;
+  	background-color: #e12027;
+  	color: #ffffff;
+  	margin: 0 10px 0 0;
+}
+
+.content .ejemplo .result {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+}
+
+.content .ejemplo .result .array-title {
+  color: #e12027;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.content .ejemplo .result .even-result {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 0;
+}
+
+.content .ejemplo .result .odd-result {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 0;
+}

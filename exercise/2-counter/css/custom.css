@@ -1,0 +1,122 @@
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Open Sans';
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 100px 0 40px 0;
+}
+
+.title .sub-title {
+	margin: 0 0 10px 0;
+	color: #999999;
+	font-size: 24px;
+  	font-weight: 600;
+}
+
+.title .main-title {
+	color: #e12027;
+	font-size: 48px;
+  	font-weight: 600;
+}
+
+.statement {
+	margin: 0 0 40px 0;
+}
+
+.statement .main-statement {
+	width: 350px;
+	text-align: center;
+	font-size: 12px;
+	color: #000000;
+	margin: 0 0 20px 0;
+}
+
+.statement .sub-statement {
+	width: 350px;
+	text-align: center;
+	font-size: 12px;
+	color: #666666;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content .menu {
+	display: flex;
+	justify-content: center;
+	margin: 0 0 20px 0;
+}
+
+.content .btn {
+	border: solid 0.5px #e12027;
+	color: #941419;
+}
+
+.content .btn:hover, .content .btn:focus, .content .btn:active {
+	background-color: #e12027;
+    color: #ffffff;;
+}
+
+.content .ejemplo {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.content .ejemplo .array {
+	display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 0 20px 0;
+}
+
+.content .ejemplo .array .element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 80px;
+	font-size: 16px;
+	border-radius: 4px;
+	background-color: #e12027;
+	color: #ffffff;
+	margin: 0 10px 10px 0;
+}
+
+.content .ejemplo .result {
+  display: flex;
+  flex-direction: column;
+  max-height: 280px;
+}
+
+.content .ejemplo .result .result-tittle {
+  color: #e12027;
+  font-weight: 600;
+  min-width: 20px;
+  margin: 0 0 10px 0;
+}
+
+.content .ejemplo .result .result-container {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.content .ejemplo .result .result-container .count-row {
+  display: flex;
+  margin: 0 40px 5px 0;
+}
+
+.content .ejemplo .result .result-container .count-row .count-tittle {
+  width: 75px;
+}

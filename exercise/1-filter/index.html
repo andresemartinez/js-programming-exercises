@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- <link rel="shortcut icon" href="./png/bubble.png"></link> -->
+		<link rel="stylesheet" href="/lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/base.css">
+		<link rel="stylesheet" href="./css/custom.css">
+
+		<title>Ejercicio 1: Filter</title>
+	</head>
+	<body>
+
+		<div class="title">
+			<span class="sub-title">Ejercicio 1</span>
+			<span class="main-title">Filter</span>
+		</div>
+
+		<div class="statement">
+			<p class="main-statement">Complete la funcion filter para que al apretar el boton con mismo nombre se genere un array con los numeros pares y otro con los impares.</p>
+			<p class="sub-statement">Para facilitar el ejercicio, ya vienen implenetadas las fucines redrawEvenArr() y redrawOddArr(). Ambas esperan un array como parametro y dibujan el mismo en pantalla.</p>
+		</div>
+
+		<div class="content">
+			<div class="menu">
+				<div class="btn-toolbar" role="toolbar">
+					<button id="generate-button" type="button" class="btn btn-default">Generate</button>
+					<button id="filter-button" type="button" class="btn btn-default">Filter</button>
+				</div>
+			</div>
+
+			<div class="ejemplo">
+				<div id=example-arr class="array"></div>
+
+				<div class="result">
+					<div class="even-result">
+						<span class="array-title">Even:</span>
+						<div id=even-arr class="array"></div>
+					</div>
+					<div class="odd-result">
+						<span class="array-title">Odd:</span>
+						<div id=odd-arr class="array"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="/lib/js/jquery-3.2.1.min.js"></script>
+		<script src="/lib/js/popper.min.js"></script>
+		<script src="/lib/js/bootstrap.min.js"></script>
+		<script src="./js/custom.js"></script>
+	</body>
+</html>
