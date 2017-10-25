@@ -47,7 +47,7 @@ $(document).ready(function () {
 	 * Initialization *
 	 ******************/
 
- 	drawMenu(mainMenu, '#main-menu', '/');
+ 	drawNavbarMenu(mainMenu, '#main-menu', '/');
 
 
  	/*************
@@ -85,6 +85,49 @@ $(document).ready(function () {
 
 	function createViewUrl(fatherUrl, view) {
 		return fatherUrl + view + '/'
+	}
+
+	//TODO Mejorar esto!!
+	function drawNavbarMenu(categories, fatherComponent, fatherUrl) {
+
+		categories
+			.sort((a, b) => a.order - b.order)
+			.forEach(category => {
+
+				var categoryCotainer = jQuery('<li/>', {
+					class: "dropdown",
+					html: jQuery('<a/>', {
+						"href": "#",
+						"class": "dropdown-toggle",
+						"data-toggle": "dropdown",
+						"role": "button",
+						"aria-haspopup": "true",
+						"aria-expanded": "false",
+						// "html": (category.name  + jQuery('<span/>', {
+						// 	class:"caret"
+						// }))
+						"html": category.name
+					})
+				}).appendTo(fatherComponent);
+
+				var subCategoryContainer = jQuery('<ul/>', {
+							class: "dropdown-menu"
+						}).appendTo(categoryCotainer);
+
+				var categoryUrl = createViewUrl(fatherUrl, category.view);
+
+				category.categories
+					.sort((a, b) => a.order - b.order)
+					.forEach(category => {
+						var subCategoryUrl = createViewUrl(categoryUrl, category.view);
+						var categoryComponent = jQuery('<li/>', {
+							html: jQuery('<a/>', {
+								href: subCategoryUrl,
+								html: category.name
+							})
+						}).appendTo(subCategoryContainer);
+					})
+			})
 	}
 
 })
