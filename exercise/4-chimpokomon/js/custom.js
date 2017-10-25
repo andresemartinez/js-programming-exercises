@@ -60,40 +60,16 @@ $(document).ready(function () {
 	 * Complete this function *
 	 **************************/
 
-	 function generateChimpokomonsInfo() {
+ 	function generateChimpokomonsInfo() {
 
-		var counter = 1;
-
-		chimpokomons.sort().forEach(name => {
-			var chimpokomon = new Map();
-
-			chimpokomon.set("number", counter);
-			chimpokomon.set("name", name);
-			chimpokomon.set("attack", Math.round(Math.random()*10));
-			chimpokomon.set("defense", Math.round(Math.random()*10));
-
-			chimpokomonsInfo.push(chimpokomon);
-
-			counter ++;
-		})
-
-		redrawTable(chimpokomonsInfo);
-	}
-
-	function search(name) {
-		var c;
-		console.log("Searching " + name);
-
-		c = chimpokomonsInfo.filter(chimpokomon => chimpokomon.get("name").match(name));
-		redrawTable(c);
+		
 	}
 
 	function inputChanged() {
-		search(getInput());
+		
 	}
 
 	function clear() {
-		$('#search-input').val("");
-		redrawTable(chimpokomonsInfo)
+		
 	}
 })
